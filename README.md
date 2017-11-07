@@ -1,4 +1,4 @@
-# serenity-allure
+# Serenity BDD - Allure combination
 
 This is a sample project which combine Serenity BDD Framework https://github.com/serenity-bdd with Allure reporting http://allure.qatools.ru/.
 
