@@ -10,7 +10,7 @@
 
     <properties>
         <!-- Needed for allure-maven-plugin to specify report version -->
-        <allure.version>1.5.2</allure.version>
+        <allure.cucumber.jvm.adaptor>1.6.4</allure.cucumber.jvm.adaptor>
         <aspectj.version>1.8.4</aspectj.version>
         <serenity.version>1.5.7</serenity.version>
         <serenity.maven.version>1.5.7</serenity.maven.version>
@@ -28,7 +28,7 @@
         <dependency>
             <groupId>ru.yandex.qatools.allure</groupId>
             <artifactId>allure-cucumber-jvm-adaptor</artifactId>
-            <version>1.6.2</version>
+            <version>[${allure.cucumber.jvm.adaptor}]</version>
         </dependency>
         <dependency>
             <groupId>net.serenity-bdd</groupId>
@@ -75,10 +75,6 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.20</version>
                 <configuration>
-                    <systemPropertyVariables>
-                        <serenity.browser.width>300</serenity.browser.width>
-                        <serenity.browser.height>500</serenity.browser.height>
-                    </systemPropertyVariables>
                     <includes>
                         <include>**/TestRunner1.java</include>
                     </includes>
